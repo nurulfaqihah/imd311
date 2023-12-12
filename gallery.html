@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body bgsound src="music/bgsound.mp3"></body>
+    <body bgcolor="#F59CE2"></body>
+        <div class="navbar">
+            <img src="pic/luvlogo.png" class="logo" width="10%">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="biodata.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="Family.html">FAMILY</a></li>
+                <li><a href="friend.html">FRIENDS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+        </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+<font color="maroon" font face="times new roman"</font>
+  <h1><i>MY MEMORIES</h1></i>
+</font>
+  <p>Click on the images below for a caption</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="pic/random1.jpg" alt="roomate" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/myself6.jpg" alt="Event" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/random9.jpg" alt="Syeram" style="width:100%" onclick="myFunction(this);">
+  </div>
+ <div class="column">
+    <img src="pic/myself2.jpg" alt="Tomey" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/random5.jpg" alt="Mirror selfie" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/random6.jpg" alt="Classmate form 3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/random7.jpg" alt="Drama" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random8.jpg" alt="Seni's" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random11.jpg" alt="Sukarelawan" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random10.jpg" alt="Memanah" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random3.jpg" alt="Budak koop" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random12.jpg" alt="Makcik" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random14.JPG" alt="Twin" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/family.jpg" alt="Beautiful" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="pic/random15.jpg" alt="my queen" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  
+  </div>
+</div>
+<center>
+<embed src="video/lapse.mp4" autoplay="false" style="height:90%"></embed>
+<br><br>
+<embed src="video/mix.mp4" autoplay="false" style="height: 90%;"></embed>
+<br><br>
+<embed src="video/penang.mp4" autoplay="false" style="height: 90%;"></embed>
+<br><br>
+</center>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:60%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blueviolet;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+
+<a href="#top"><img src="pic/arrow.png" width="2%"height="2%"</a> 
+<body>
+<div class="footer">
+  <p>This Website is developed for IMD311 Individual Assignment</p>
+</div>
+
+</body>
+</html>
+
